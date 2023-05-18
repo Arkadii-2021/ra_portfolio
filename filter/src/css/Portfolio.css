@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images_container {
+  column-fill: balance;
+  column-count: 3;
+  width: 100%;
+}
+
+.images_item {
+  width: 100%;
+  height: 100%;
+}
+
+.select_cnt {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  gap: 5px;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px #66ccff solid;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 21px;
+  line-height: 24px;
+}
+
+
+
+
+
+
