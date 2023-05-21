@@ -2,8 +2,8 @@ import React from 'react'
 
 
 function Toolbar({ filters, selected, onSelectFilter }) {
-    const onFilter = (category) => {
-        onSelectFilter(category)
+    const onFilter = (selected) => {
+        onSelectFilter(selected)
     }
 	
     return (
