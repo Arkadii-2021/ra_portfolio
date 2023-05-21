@@ -12,7 +12,7 @@ function Portfolio(props) {
     return {id: v4(), ...imgEl}
   });
   const filters = ["All", "Websites", "Flayers", "Business Cards"];
-  const filterData = Array.from(listImage).filter((item) => item.category === selected)
+  const filterData = listImage.filter((item) => item.category === selected)
   const onSelectedFilter = (category) => {
     return setSelected(category);
   }
@@ -22,11 +22,9 @@ function Portfolio(props) {
     <Toolbar filters={filters}
     selected = {selected}
     onSelectFilter={onSelectedFilter} />
-    <ProjectList projects={filterData.length ? filterData : listImage}/>
+    <ProjectList projects={selected === 'All' ? listImage : filterData}/>
     </>
   )
 }
 
 export default Portfolio
-
-
